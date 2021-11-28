@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    background-color: teal;
+}
+.card {
+    width: 240px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -80px;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 3s;
+    border-radius: 20px;
+}
+.front,
+.back {
+    position: absolute;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 220px;
+    height: 100%;
+    padding-top: 40px;
+}
+.front {
+    background: linear-gradient(135deg, #bd6772, #53223f);
+}
+.back {
+    background: linear-gradient(135deg, #bd6772, #53223f);
+    transform: rotateY(180deg);
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.rot{
+    transform: rotateY(180deg);
+}
+/* front card */
+.card-botom {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.card-name {
+    width: 60%;
+    height: 10px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.card-date {
+    width: 30%;
+    height: 10px;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+}
+.card-cvv {
+    width: 80%;
+    height: 20px;
+    background-color: blanchedalmond;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+}
+/* body */
+.body {
+    width: 300px;
+    height: 50vh;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: wheat;
+}
+.number {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num-inp {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: white;
+}
+.num4 {
+    width: 20%;
+    height: 20px;
+}
+.num5{
+    width: 25%;
+    height: 20px;
+    border-radius: 5px;
+    border: none; 
+}
+.holder {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    height: 40px;
+}
+.holder input {
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+.body-botom {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.date {
+    width: 50%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.botom-inp {
+    width: 45%;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+}
+.cvv {
+    width: 50%;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+}
+.cvv input {
+    width: 50%;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+}
+.buton {
+    width: 80%;
+    height: 50px;
+    margin: 15% 23%;
+}
+.buton button {
+    width: 70%;
+    height: 30px;   
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: rgb(130, 204, 238);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit card</title>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="card">
+        <div id="card" class="card-inner">
+          <div class="front">
+            <div class="number">
+              <div class="num5">
+                <div id="card_inp_num1" class="">0000</div>
+              </div>
+              <div class="num5">
+                <div id="card_inp_num2" class="-">0000</div>
+              </div>
+              <div class="num5">
+                <div id="card_inp_num3" class="">0000</div>
+              </div>
+              <div class="num5">
+                <div id="card_inp_num4" class="">0000</div>
+              </div>
+            </div>
+
+            <div class="card-botom">
+              <div id="card-name" class="card-name">name/surname</div>
+              <div id="card-date" class="card-date">date</div>
+            </div>
+          </div>
+
+          <div class="back">
+            <div id="card-cvv" class="card-cvv"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="number">
+        <div class="num4">
+          <input
+            id="inp-num1"
+            maxlength="4"
+            class="num-inp"
+            type="text-number"
+          />
+        </div>
+        <div class="num4">
+          <input id="inp-num2" maxlength="4" class="num-inp" type="text" />
+        </div>
+        <div class="num4">
+          <input id="inp-num3" maxlength="4" class="num-inp" type="text" />
+        </div>
+        <div class="num4">
+          <input id="inp-num4" maxlength="4" class="num-inp" type="text" />
+        </div>
+      </div>
+
+      <div class="holder">
+        <input id="name" maxlength="20" placeholder="" type="text" />
+      </div>
+
+      <div class="body-botom">
+        <div class="date">
+          <select name="" class="botom-inp" id="inp-month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+
+          <select name="" class="botom-inp" id="inp-year">
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+
+        <div class="cvv">
+          <input id="cvv" maxlength="3" type="text" />
+        </div>
+      </div>
+
+      <div class="buton">
+        <button id="btn">submit</button>
+      </div>
+
+      <h1 id="h"></h1>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
